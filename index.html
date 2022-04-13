@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentacja PL/SQL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <h1 class="main-title">Dokumentacja PL/SQL</h1>
+        <section>
+            <h1>PL/SQL umożliwia definiowanie:</h1>
+            <ul>
+                <li>anonimowych bloków programowych</li>
+                <li>procedur i funkcji składowanych w bazie danych</li>
+                <li>pakietów (bibliotek) procedur i funkcji</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Język PL/SQL - korzyści</h1>
+            <ul>
+                <li>prostota wykonania niektórych zadań w stosunku do SQL</li>
+                <li>większa wydajność</li>
+                <li>dostępność nieobecnych w SQL mechanizmów
+                    <ul>
+                    <li>stałe, zmienne</li>
+                    <li>struktury sterujące</li>
+                    <li>obsługa wyjątków</li>
+                    </ul>
+                </li>
+                <li>łatwość przenoszenia pomiędzy platformami, na które 
+                    oferowany jest Oracle (kod wykonywany na serwerze)
+                    </li>
+                <li>możliwość wykorzystania predefiniowanych pakietów
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h1>Anonimowy blok PL/SQL</h1>
+            <img src="img1.JPG" alt="">
+        </section>
+        <section>
+            <h1>Typy danych</h1>
+            <img src="img2.JPG" alt="">
+        </section>
+        <section>
+            <h1>Wybrane typy</h1>
+            <img src="img3.JPG" alt="">
+            <img src="img4.JPG" alt="">
+            <img src="img5.JPG" alt="">
+        </section>
+        <section>
+            <h1>Zmienne:</h1>
+            <ul>
+                <li>Zmienne służą do przechowywania wyników zapytań i 
+                    obliczeń w celu ich późniejszego wykorzystania</li>
+                <li>Wszystkie zmienne muszą być zadeklarowane przed ich 
+                    użyciem</li>
+                <li>Każda zmienna posiada typ - takie same typy jak w SQL
+                </li>
+                <li>Zmienne deklaruje się w sekcji DECLARE</li>
+                <li>Mamy zmienne:
+                    <ul>
+                        <li>proste – liczba, łańcuch znaków, data, wartość 
+                            logiczna</li>
+                        <li>złożone – rekord, tablica, obiekt</li>
+                    </ul>
+                </li>
+                <li>Dostępne w bloku deklaracji i blokach zagnieżdżonych</li>
+                <li>Przykład deklaracji:</li>
+                <img src="img6.JPG" alt="">
+                <li>Zmienna niezainicjalizowana ma wartość pustą</li>
+                <li>Sposoby inicjalizowania zmiennej:
+                    <ul>
+                        <li>przypisanie wartości (:= operator przypisania)</li>
+                        <li>określenie wartości domyślnej – (DEFAULT)</li>
+                    </ul>
+                </li>
+                <li>Można wymusić obowiązkowość wartości (NOT NULL)</li>
+                <img src="img7.JPG" alt="">
+            </ul>
+        </section>
+        <section>
+            <h1>Zmienna rekordowa:</h1>
+            <ul>
+                <li>PL/SQL posiada zmienne strukturalne nazywane 
+                    rekordami - podzielone są na pola, z których każde 
+                    posiada nazwę i typ
+                    </li>
+                <li>Sposób deklaracji zmiennej rekordowej:
+                    <ul>
+                        <li>zdefiniowanie typu rekordowego</li>
+                        <li>zdefiniowanie zmiennej typu rekordowego</li>
+                    </ul>
+                </li>
+                <li>W programie używane przez dostęp kropkowy</li>
+                <li>Przykład użycia:</li>
+                <img src="img8.JPG" alt="">
+            </ul>
+        </section>
+        <section>
+            <h1>Atrybuty obiektów</h1>
+            <ul>
+                <li>Wszystkie obiekty posiadają atrybuty</li>
+                <li>Atrybut %TYPE służy do deklaracji zmiennej prostej na 
+                    podstawie typu atrybutu tabeli bazy danych lub typu innej 
+                    zmiennej
+                    </li>
+                <li>Atrybut %TYPE służy do deklaracji zmiennej prostej na 
+                    podstawie typu atrybutu tabeli bazy danych lub typu innej 
+                    zmiennej
+                    </li>
+            </ul>
+            <img src="img9.JPG" alt="">
+        </section>
+        <section>
+            <h1>Stałe</h1>
+            <img src="img10.JPG" alt="">
+        </section>
+        <section>
+            <h1>Sekwencja</h1>
+            <img src="img11.JPG" alt="">
+        </section>
+        <section>
+            <h1>Komunikacja z użytkownikiem</h1>
+            <img src="img12.JPG" alt="">
+        </section>
+        <section>
+            <h1>Instruckcja IF THEN</h1>
+            <img src="img13.JPG" alt="">
+            <img src="img14.JPG" alt="">
+        </section>
+        <section>
+            <h1>Instruckcja CASE</h1>
+            <img src="img15.JPG" alt="">
+            <img src="img16.JPG" alt="">
+        </section>
+        <section>
+            <h1>Iteracja - instrukcja LOOP</h1>
+            <img src="img17.JPG" alt="">
+            <img src="img18.JPG" alt="">
+        </section>
+        <section>
+            <h1>Iteracja - instrukcja WHILE</h1>
+            <img src="img19.JPG" alt="">
+        </section>
+        <section>
+            <h1>Iteracja - instrukcja FOR</h1>
+            <img src="img20.JPG" alt="">
+        </section>
+        <section>
+            <h1>Instrukcja NULL</h1>
+            <img src="img21.JPG" alt="">
+        </section>
+        <section>
+            <h1>Zapytania w PL/SQL</h1>
+            <ul>
+                <li>Zapytanie musi zwrócić dokładnie jeden rekord</li>
+                <li>Zapytanie musi zawierać klauzulę INTO z:
+                    <ul>
+                        <li>listą zmiennych prostych, których liczba musi 
+                            odpowiadać liczbie wyrażeń w klauzuli SELECT
+                            zapytania – obowiązuje również zgodność typów</li>
+                        <li>zmienną rekordową o strukturze zgodnej ze strukturą 
+                            rekordu zwróconego przez zapytanie</li>
+                    </ul>
+                </li>
+                <li>Na końcu polecenia średnik
+                </li>
+            </ul>
+            <img src="img22.JPG" alt="">
+            <ul>
+                <li>Przykład użycia ze zmienną rekordową:</li>
+            </ul>
+            <img src="img23.JPG" alt="">
+            <img src="img24.JPG" alt="">
+        </section>
+        <section>
+            <h1>Kursory</h1>
+            <ul>
+                <li>Otwarcie kursora</li>
+                <li style="list-style: none;"><img src="img25.JPG" alt=""></li>
+                <li>Pobieranie rekordów z kursora</li>
+                <li style="list-style: none;"><img src="img26.JPG" alt=""></li>
+                <li>Zamykanie kursora</li>
+                <li style="list-style: none;"><img src="img27.JPG" alt=""></li>
+            </ul>
+            <ul>
+                <li>Atrybuty kursora</li>
+                <li style="list-style: none;"><img src="img28.JPG" alt=""></li>
+                <li>Przykład użycia:</li>
+                <li style="list-style: none;"><img src="img29.JPG" alt=""></li>
+            </ul>
+        </section>
+        <section>
+            <h1>Pętla FOR z kursorem</h1>
+            <img src="img30.JPG" alt="">
+            <img src="img31.JPG" alt="">
+        </section>
+        <section>
+            <h1>Pętla FOR z podzapytaniem</h1>
+            <img src="img32.JPG" alt="">
+            <img src="img33.JPG" alt="">
+        </section>
+        <section>
+            <h1>WHERE CURRENT OF</h1>
+            <img src="img34.JPG" alt="">
+        </section>
+        <section>
+            <h1>Kursory niejawne</h1>
+            <ul>
+                <li>Tworzony automatycznie dla poleceń INSERT, UPDATE, 
+                    DELETE i SELECT INTO w programie PL/SQL</li>
+                <li>Otwierany bezpośrednio przed wykonaniem polecenia</li>
+                <li>Zamykany zaraz po wykonaniu polecenia</li>
+                <li>Nazwa kursora: SQL</li>
+            </ul>
+            <ul>
+                <li>Atrybuty kursora niejawnego</li>
+                <li style="list-style: none;"><img src="img35.JPG" alt=""></li>
+                <li>Przykład użycia:</li>
+                <li style="list-style: none;"><img src="img36.JPG" alt=""></li>
+            </ul>
+        </section>
+        <section>
+            <h1>Przykład praktyczny</h1>
+            <img src="img37.JPG" alt="">
+        </section>
+        <section>
+            <h1>Obsługa wyjątków</h1>
+            <img src="img38.JPG" alt="">
+            <img src="img39.JPG" alt="">
+            <img src="img40.JPG" alt="">
+            <img src="img41.JPG" alt="">
+            <img src="img42.JPG" alt="">
+            <img src="img43.JPG" alt="">
+            <img src="img44.JPG" alt="">
+            <img src="img45.JPG" alt="">
+        </section>
+        <section>
+            <h1>Kolosy</h1>
+            <img src="img46.JPG" alt="">
+            <img src="img47.JPG" alt="">
+            <img src="img48.JPG" alt="">
+            <img src="img49.JPG" alt="">
+            <img src="img50.JPG" alt="">
+            <img src="img51.JPG" alt="">
+            <img src="img52.JPG" alt="">
+        </section>
+    </div>
+</body>
+</html>

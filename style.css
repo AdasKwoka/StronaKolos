@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+}
+.wrap {
+    max-width: 1200px;
+    margin: 30 auto 0;
+}
+
+.main-title {
+    padding: 50;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+}
+
+section {
+    margin-top: 50;
+    border-bottom: 1px solid #000;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    object-fit: contain;
+}
