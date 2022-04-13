@@ -1,0 +1,2 @@
+# StronaKolos
+kolos
